@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>狂海阁官方网站</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="icon/KHG.ico" type="image/x-icon">
+	<script>
+function startTime(){
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();// 在小于10的数字前加一个‘0’
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+}
+function checkTime(i){
+	if (i<10){
+		i="0" + i;
+	}
+	return i;
+}
+</script>
+<script type="text/javascript">
+	var con;
+		con=confirm ("你是喷子/键盘侠吗（确定：yes，取消：no）"); 
+		if(con==true)alert("我希望你是在开玩笑");
+		else alert("希望你没开玩笑嗷"); 
+</script>
+</head>
+<body background="image/background.jpg" style="background-repeat: no-repeat;background-size: 100%" onload="startTime()">
+	<div align="center" style="color: #0000E3">
+		<img src="image/logo.jpeg" width="300" height="300">
+	<h1>欢迎来到狂海阁官方网站</h1>
+	<h2>我们是一个小小的Minecraft交流群</h2>
+	<h2>包含了红石，PVP，指令，建筑，服务器等多方面内容</h2>
+    <h2>我们的群号：245641557</h2>
+    <h2>加群链接：<a href="https://jq.qq.com/?_wv=1027&k=jFYlHrDA">点我跳转</a></h2>
+</div>
+<div align="center">当前时间</div>
+<div id="txt" align="center"></div>
+<br>
+<br>
+<div align="center">问题反馈与FAQ：<a href="faq.html">点我跳转</a></div>
+</body>
+</html>
